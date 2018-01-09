@@ -9,11 +9,11 @@
 <%= f.label :email%><br>
 <%= f.email_field :email, class: 'form_control'%><br>
 <%= f.label :phone %><br>
-<%= f.phone_field :phone, class: 'form_control' %><br>
+<%= f.phone_field :phone, class: 'form_control', required: true  %><br>
 <%= f.label :password%><br>
-<%= f.password_field :password, class: 'form_control' %><br>
+<%= f.password_field :password, class: 'form_control', required: true  %><br>
 <%= f.label :password_confirmation%><br>
-<%= f.password_field :password_confirmation, class: 'form_control' %><br>
+<%= f.password_field :password_confirmation, class: 'form_control', required: true  %><br>
 
 <%= f.submit "Create my account", class: "btn btn-primary" %>
 <% end %>
