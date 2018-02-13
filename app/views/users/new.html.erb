@@ -5,9 +5,9 @@
 <%= form_for(@user) do |f| %>
 <%= render 'shared/error_messages' %>
 <%= f.label :name %><br>
-<%= f.text_field :name, class: 'form_control' %><br>
+<%= f.text_field :name, class: 'form_control', required: true %><br>
 <%= f.label :email%><br>
-<%= f.email_field :email, class: 'form_control'%><br>
+<%= f.email_field :email, class: 'form_control',required: true %><br>
 <%= f.label :phone %><br>
 <%= f.phone_field :phone, class: 'form_control', required: true  %><br>
 <%= f.label :password%><br>
